@@ -18,6 +18,10 @@
                 <table class="table table-striped table-hover">
 
                     <tr>
+                        <td>Date</td>
+                        <td>{!! $unitRequest->date_requested!!}</td>
+                    </tr>
+                    <tr>
                         <td>Company Name</td>
                         <td>{!! $unitRequest->company_name!!}</td>
                     </tr>

@@ -12,7 +12,7 @@
             <thead>
             <tr>
                 <th class="min">ID</th>
-                <th>Date Requested</th>
+                <th>Date</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Company Name</th>
