@@ -12,6 +12,7 @@
             <thead>
             <tr>
                 <th class="min">ID</th>
+                <th>Date Requested</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Company Name</th>
@@ -24,6 +25,7 @@
                 @foreach($unitRequests as $request)
                     <tr>
                         <td>{{$request->id}}</td>
+                        <td>{{$request->created_at}}</td>
                         <td>{{$request->first_name}}</td>
                         <td>{{$request->company_name}}</td>
                         <td>{{$request->last_name}}</td>
