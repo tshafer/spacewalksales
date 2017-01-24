@@ -19,7 +19,7 @@
 
                     <tr>
                         <td>Date</td>
-                        <td>{!! $unitRequest->date_requested!!}</td>
+                        <td>{!! $unitRequest->created_at!!}</td>
                     </tr>
                     <tr>
                         <td>Company Name</td>
@@ -71,7 +71,7 @@
                                         <tr>
                                             <td data-th="Product">
                                                 <div class="row">
-                                                    <div class="col-sm-3 hidden-xs">
+                                                    <div class="col-sm-4 hidden-xs">
                                                         @if($unit->options->image)
                                                             <a href="{{route('product', [$unit->options->categorySlug, $unit->options->productSlug])}}">
                                                                 <img src="{{$unit->options->image}}"
@@ -80,7 +80,7 @@
                                                             </a>
                                                         @endif
                                                     </div>
-                                                    <div class="col-sm-9">
+                                                    <div class="col-sm-8">
                                                         <a href="{{route('product', [$unit->options->categorySlug, $unit->options->productSlug])}}">{{$unit->options->product_name}}</a>
                                                         - ({{$unit->options->width}} x {{$unit->options->length}}
                                                         x {{$unit->options->height}}) - ({{$unit->options->weight}} LBS)
