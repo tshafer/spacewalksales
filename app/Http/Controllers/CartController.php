@@ -22,6 +22,8 @@ class CartController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
+     *
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
@@ -31,7 +33,9 @@ class CartController extends Controller
 
         $media = ($unit->product->getMedia('products')->count() > 0) ? $unit->product->getMedia('products')->first()->getUrl('thumb') : null;
 
-        Cart::instance(session('cartId'))->add($unit->id, $unit->description, 1, $unit->price, [
+        $name = isset($unit->description) ? $unit->description : $unit->product->name;
+
+        Cart::instance(session('cartId'))->add($unit->id, $name, 1, $unit->price, [
             'product_name' => $unit->product->name,
             'image'        => $media,
             'productSlug'  => $unit->product->slug,
