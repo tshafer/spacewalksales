@@ -73,7 +73,7 @@
                 <li><a href="{{route('cart.index')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Checkout</a>
                 </li>
                 <li><a href="{{ route('contact') }}"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Contact</a>
-                <li><a href="/pdf/SpaceWalkSales_2018_Catalog.pdf" download="SpaceWalkSales_2017_Catalog"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Download Catalog</a>
+                <li><a href="/pdf/SpaceWalkSales_2018_Catalog.pdf" download="SpaceWalkSales_2018_Catalog"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Download Catalog</a>
                 </li>
             </ul>
             <div class="pull-right cart-menu hidden-sm hidden-xs">
