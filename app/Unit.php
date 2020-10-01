@@ -13,7 +13,7 @@ use Sofa\Eloquence\Eloquence;
 class Unit extends Model implements Buyable
 {
 
-    use Linkable, Sortable, Attributes, Eloquence, SoftDeletes, CanBeBought;
+    use Linkable, Sortable, Attributes, SoftDeletes, CanBeBought;
 
     /**
      * The database table used by the model.

@@ -55,8 +55,8 @@
                 <div class="block-title">
                     <h2>DANGER ZONE</h2>
                 </div>
-                {!! Form::open(['route' => ['admin.specials.destroy', $special->id], 'method' => 'delete']) !!}
-                {!! Form::submit('DELETE SPECIAL', ['class' => 'btn btn-block btn-danger del']) !!}
+                {!! Form::open(['route' => ['admin.sliders.destroy', $slider->id], 'method' => 'delete']) !!}
+                {!! Form::submit('DELETE SLIDER', ['class' => 'btn btn-block btn-danger del']) !!}
                 {!! Form::close() !!}
                 <br/>
             </div>

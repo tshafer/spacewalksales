@@ -32,18 +32,18 @@
 
                 @include('admin.partials.header')
 
-                        <!-- Page content -->
+                <!-- Page content -->
                 <div id="page-content">
                     <!-- Blank Header -->
                     <div class="content-header">
                         <div class="header-section">
                             <h1>
-                                <i class="gi {{$icon or ''}}"></i>@yield('title')<br>
+                                <i class="gi {{isset($icon) or ''}}"></i>@yield('title')<br>
                                 <small>@yield('subtitle')</small>
                             </h1>
                         </div>
                     </div>
-                    @include('flash::messages')
+                    @include('partials.flash')
                     @yield('content')
 
                     <div class="clearfix"></div>

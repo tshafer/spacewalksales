@@ -6,10 +6,11 @@
 
 @section('content')
     <div class="row">
-        {!!model($slider, ['route' => ['admin.sliders.update', $slider->id], 'method' => 'patch', 'id' => 'slider-form','files' => true])!!}
+        {!!Form::model($slider, ['route' => ['admin.sliders.update', $slider->id], 'method' => 'patch', 'id' => 'slider-form','files' => true])!!}
+
 
         @include('admin.sliders.form')
 
-        {!!close()!!}
+        {!!Form::close()!!}
     </div>
 @stop
