@@ -97,7 +97,7 @@ Route::model('units', App\Unit::class);
 Route::model('users', App\User::class);
 Route::model('sliders', App\Slider::class);
 Route::model('products', App\Product::class);
-//Route::model('specials', App\Special::class);
+Route::model('specials', App\Special::class);
 Route::model('categories', App\Category::class);
 Route::model('unitrequest', App\UnitRequest::class);
 

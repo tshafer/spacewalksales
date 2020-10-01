@@ -9,7 +9,7 @@
         {!! Form::open(['route' => 'login', 'method' => 'post']) !!}
         <div class="form-group">
             {!! Form::label('email') !!}
-            {!! Form::Form::text('email', null, ['class' => 'form-control']) !!}
+            {!! Form::text('email', null, ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group">

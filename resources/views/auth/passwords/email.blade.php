@@ -17,7 +17,7 @@
 
             <div class="form-group">
                 {!! Form::label('E-Mail Address') !!}
-                {!! Form::Form::text('email', null, ['class' => 'form-control']) !!}
+                {!! Form::text('email', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
                 {!! Form::submit('Send Password Reset Link', ['class' => 'btn btn-primary']) !!}
