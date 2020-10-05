@@ -20,7 +20,7 @@
                         <a class="btn btn-alt btn-sm btn-default"
                            href="{{route('product', [$product->categories->slug, $product->slug])}}"
                            target="_blank">
-                            <i class="fa fa-external-link" aria-Form::hidden(="true"></i>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                                 @foreach ($product->getMedia('products') as $photo)
                                     <li>
                                         <div>
-                                            <img src="{{$photo->getUrl('thumb') }}"/>
+                                            <img src="{{$photo->getUrl('thumb') }}" class="img-responsive"/>
                                         </div>
                                         <div class="btn-group">
                                             @if(array_get($photo->custom_properties, 'default') == null)
@@ -106,7 +106,7 @@
                                 @foreach ($product->getMedia('accessories') as $photo)
                                     <li>
                                         <div>
-                                            <img src="{{$photo->getUrl('adminThumb') }}"/>
+                                            <img src="{{$photo->getUrl('adminThumb') }}" class="img-responsive"/>
                                         </div>
                                         <div class="btn-group">
                                             <a href="{{ route('admin.products.images.accessories.delete',[$product->id, $photo->id]) }}"

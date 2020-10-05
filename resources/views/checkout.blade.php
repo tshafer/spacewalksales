@@ -76,7 +76,7 @@
                                             <a href="{{route('product', [$unit->options->categorySlug, $unit->options->productSlug])}}">
                                                 <img src="{{$unit->options->image}}"
                                                      alt="{{$unit->options->product_name}}"
-                                                     title="{{$unit->options->product_name}}"/>
+                                                     title="{{$unit->options->product_name}}" class="img-responsive"/>
                                             </a>
                                         @endif
                                     </div>
