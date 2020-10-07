@@ -101,7 +101,7 @@
                                 <td>{{$product->name}}</td>
                                 <td>{{$product->is_enabled}}</td>
                                 <td>
-                                    {!! defaultProductImage($product, 'adminThumb') !!}
+                                    {!! defaultProductImage($product, 'adminThumb', 'admin', 200) !!}
                                 </td>
                                 <td class="min">
                                     {!!$product->getTableLinks()!!}
