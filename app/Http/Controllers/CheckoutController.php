@@ -52,8 +52,7 @@ class CheckoutController extends Controller
             $message->replyTo(array_get($data, 'email'), $name);
             $message->subject('Space Walk Sales Requests Form');
             $message->from('sales@spacewalk.com', 'Space Walk Sales Request');
-
-            $message->to('kelsey@herecomesfun.com');
+            $message->to('sales@herecomesfun.com', 'Space Walk Sales Request');
         });
 
 
