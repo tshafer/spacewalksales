@@ -8,7 +8,7 @@
 
             <div class="form-group">
                 {!! Form::label('product') !!}
-                {!! select('product', $products, $productId, ['class' => 'form-control']) !!}
+                {!! Form::select('product', $products, $productId, ['class' => 'form-control']) !!}
             </div>
 
             <div class="form-group">
@@ -56,7 +56,7 @@
     </div>
 
     <div class="form-group form-actions">
-        {!!submit('Save Unit', ['class' => 'btn btn-block btn-primary'])!!}
+        {!!Form::submit('Save Unit', ['class' => 'btn btn-block btn-primary'])!!}
     </div>
 </div>
 
