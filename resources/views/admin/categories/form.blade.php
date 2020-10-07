@@ -19,7 +19,7 @@
 
             <div class="form-group">
                 @if(isset($category) &&  $category->getMedia('categories')->first())
-                    <img src="{{url('/')}}{!! $category->getMedia('categories')->first()->getUrl('adminThumb')!!}"/><br/>
+                    <img src="{{url('/')}}{!! $category->getMedia('categories')->first()->getUrl('adminThumb')!!}" style="width: 200px;"/><br/>
                 @endif
                 {!! Form::label('image') !!}
                 {!! Form::file('image',['class' => 'form-control']) !!}
