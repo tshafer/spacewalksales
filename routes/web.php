@@ -96,11 +96,12 @@ Route::bind('subcategory', function($value){
 });
 
 Route::bind('product', function($value){
+
     if(!is_numeric($value)) {
         return Product::whereSlug($value)->first();
     }
 
-    return Category::find($value)->first();
+    return Product::find($value)->first();
 });
 
 /**

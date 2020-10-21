@@ -60,7 +60,7 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
 
-        $nestedList = Category::allLeaves()->orderBy('name')->get()->pluck('name', 'id')->toArray();
+        $nestedList = Category::get()->pluck('name', 'id')->toArray();
 
         asort($nestedList);
 
@@ -78,7 +78,7 @@ class ProductController extends Controller
      */
     public function create(Request $request)
     {
-        $nestedList = Category::allLeaves()->orderBy('name')->get()->pluck('name', 'id')->toArray();
+        $nestedList = Category::get()->pluck('name', 'id')->toArray();
 
         asort($nestedList);
 
