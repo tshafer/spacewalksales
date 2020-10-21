@@ -92,7 +92,7 @@ Route::bind('subcategory', function($value){
         return Category::whereSlug($value)->first();
     }
 
-    return Category::find($value)->first();
+    return Category::findOrFail($value);
 });
 
 Route::bind('product', function($value){
@@ -100,8 +100,7 @@ Route::bind('product', function($value){
     if(!is_numeric($value)) {
         return Product::whereSlug($value)->first();
     }
-
-    return Product::find($value)->first();
+    return Product::findOrFail($value);
 });
 
 /**
