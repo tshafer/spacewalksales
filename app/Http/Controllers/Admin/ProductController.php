@@ -118,7 +118,7 @@ class ProductController extends Controller
         $this->validate($request, array_merge([
             //'intro_text' => 'required',
         ], $rules));
-        $product = Product::create($request->all());
+        $product = Product::create($request->except('categories'));
 
         if ($request->has('enabled')) {
             $product->enabled = true;
@@ -131,6 +131,7 @@ class ProductController extends Controller
         } else {
             $product->featured = false;
         }
+
         if ($request->has('categories')) {
             $product->categories()->dissociate();
             $categoryModel = Category::whereId($request->get('categories'))->first();
