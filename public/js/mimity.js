@@ -26,7 +26,7 @@ $(function () {
             auto: true,
             pause: 4000,
             pager: false,
-             touchEnabled: false
+             touchEnabled: false,
             controls: true
         });
     }
